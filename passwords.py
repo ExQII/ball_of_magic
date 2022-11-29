@@ -30,9 +30,7 @@ def generate_password(lenght, chars):
         generate += random.choice(mylist)
     print(generate)
 
-generate_password(lenn, chars)
-
-for _ in range(int(quantity) - 1):
+for _ in range(int(quantity)):
     generate_password(lenn, chars)
 
 
