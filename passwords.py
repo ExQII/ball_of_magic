@@ -24,10 +24,16 @@ if odnozn == 'да':
         chars.replace(c, '')
 
 def generate_password(lenght, chars):
-    for i in range(int(quantity)):
-        generate = random.shuffle(chars)
-        print(generate)
+    mylist = list(chars)
+    generate = ''
+    for i in range(int(lenght)):
+        generate += random.choice(mylist)
+    print(generate)
+
 generate_password(lenn, chars)
+
+for _ in range(int(quantity) - 1):
+    generate_password(lenn, chars)
 
 
 
